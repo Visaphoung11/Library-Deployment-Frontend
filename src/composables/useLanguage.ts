@@ -1,5 +1,5 @@
 // composables/useLanguage.ts
-import { ref, computed, type Ref, type ComputedRef } from "vue";
+import { ref, computed, type Ref } from "vue";
 import type { Translations } from "../types";
 
 const language: Ref<"en" | "km"> = ref("en");

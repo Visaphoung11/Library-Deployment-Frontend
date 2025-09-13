@@ -97,7 +97,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import { useRouter, useRoute } from "vue-router";
+import { useRouter } from "vue-router";
 import { useAuth } from "../composables/useAuth";
 import { useLanguage } from "../composables/useLanguage";
 // import { useTheme } from "../composables/useTheme";
@@ -109,7 +109,6 @@ interface NavItem {
 }
 
 const router = useRouter();
-const route = useRoute();
 const { user, logout } = useAuth();
 const { language, setLanguage, t } = useLanguage();
 // const { theme, toggleTheme } = useTheme();
